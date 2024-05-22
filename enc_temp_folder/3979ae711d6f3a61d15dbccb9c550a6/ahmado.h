@@ -28,12 +28,6 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 private:  
-	void MoveForward(float Fmove);
-	void MovieRight(float Rmove);
-	void Turn(float move);
-	void TurnUp(float move);
-
-
 	UPROPERTY(EditAnyWhere)
 	class USpringArmComponent* springarm;
 

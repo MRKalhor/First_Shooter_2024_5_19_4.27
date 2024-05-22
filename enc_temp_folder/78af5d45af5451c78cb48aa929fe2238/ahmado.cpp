@@ -36,29 +36,6 @@ void Aahmado::Tick(float DeltaTime)
 void Aahmado::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
-	PlayerInputComponent->BindAxis("MoveForward", this, &Aahmado::MoveForward);
-	PlayerInputComponent->BindAxis("MovieRight", this, &Aahmado::MovieRight);
-	PlayerInputComponent->BindAxis("Turn", this, &Aahmado::Turn);
-	PlayerInputComponent->BindAxis("TurnUp", this, &Aahmado::TurnUp);
-}
 
-void Aahmado::MoveForward(float Fmove)
-{
-	AddMovementInput(GetActorForwardVector(), Fmove);
-}
-
-void Aahmado::MovieRight(float Rmove)
-{
-	AddMovementInput(GetActorRightVector(), Rmove);
-}
-
-void Aahmado::Turn(float move)
-{
-	AddControllerYawInput(move);
-}
-
-void Aahmado::TurnUp(float move)
-{
-	AddControllerPitchInput(move);
 }
 

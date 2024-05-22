@@ -1,6 +1,7 @@
 # Visual Studio 2015 user specific files
 .vs/
 
+Content/MetaHumans
 # Compiled Object files
 *.slo
 *.lo
